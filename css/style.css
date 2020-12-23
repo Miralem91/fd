@@ -37,6 +37,11 @@
                     padding: 2px 10px;
                 }
                 
+                .header-btn:hover {
+                    background-color: #5daa23;
+                    color: white;
+                }
+                
                 .fa-chevron-right {
                     color: #006699;
                 }
@@ -96,6 +101,44 @@
                     font-weight: 700;
                 }
                 
+                .action-btn {
+                    background-color: #7AC143;
+                    border: none;
+                    color: white;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 100px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    width: 80%;
+                    position: relative;
+                    padding: 10px;
+                    max-width: 450px;
+                }
+                
+                .action-btn:hover {
+                    background-color: #5daa23;
+                    color: white;
+                }
+                
+                .btn-text {
+                    display: inline-block;
+                    padding-right: 24px!important;
+                }
+                
+                .btn-arrow {
+                    background-image: url('../assets/images/blue-icon.png');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    display: inline-block;
+                    right: 10px;
+                    top: 30px;
+                    width: 22px;
+                    height: 22px;
+                }
+                
                 .age-container {
                     display: grid !important;
                     grid-template-columns: 1fr 1fr 1fr;
@@ -116,50 +159,6 @@
                 
                 .age-container a {
                     text-decoration: none;
-                }
-                
-                .huge-btn-a {
-                    text-decoration: none;
-                }
-                
-                .huge-btn-a:hover {
-                    text-decoration: none;
-                }
-                
-                .huge-btn-div {
-                    background-color: #7AC143;
-                    color: white;
-                    text-transform: uppercase;
-                    height: auto;
-                    display: block;
-                    margin: auto;
-                    width: 95%;
-                    border-radius: 10px;
-                    border: none;
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    padding-top: 10px;
-                    padding-left: 10px;
-                    text-align: center;
-                    display: grid;
-                    grid-template-columns: 90% 10%;
-                    grid-template-rows: auto;
-                    display: flex;
-                    align-items: center;
-                }
-                
-                .huge-btn-div:hover {
-                    background-color: #619c34;
-                }
-                
-                .huge-btn {
-                    width: 80%;
-                }
-                
-                .huge-btn-div img {
-                    position: absolute;
-                    width: 8% !important;
-                    right: 40px;
                 }
                 
                 .footer {
@@ -184,57 +183,26 @@
                 }
                 /*DESKTOP VERSION*/
                 
-                @media only screen and (min-width: 768px) {
-                    #header {
-                        background: #006699;
-                        border-bottom: 5px solid #7AC143;
+                @media only screen and (min-width: 437px) {
+                    .btn-arrow {
+                        right: 10px;
+                        top: 15px;
+                        width: 22px;
+                        height: 22px;
                     }
+                }
+                
+                @media only screen and (min-width: 768px) {
                     p {
                         font-size: 18px;
-                    }
-                    .header-content {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    .brand {
-                        width: 50%;
-                    }
-                    .brand img {
-                        width: 100%;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                    }
-                    .header-btn {
-                        background-color: #7AC143;
-                        font-size: 14px;
-                        color: white;
-                        font-weight: 700;
-                        padding: 2px 10px;
-                    }
-                    .fa-chevron-right {
-                        color: #006699;
-                    }
-                    .above-title p {
-                        font-size: 14px;
-                        color: #999;
-                        font-weight: 400;
-                    }
-                    .blue-url {
-                        color: #006699;
-                        font-weight: 700;
                     }
                     .main-title {
                         font-size: 2.5rem;
                         text-align: center;
-                        font-weight: 700;
                         width: 90%;
                         display: block;
                         margin: auto;
                         margin-bottom: 20px;
-                    }
-                    .main-content img {
-                        width: 100%;
                     }
                     .text-container {
                         width: 100%;
@@ -281,68 +249,16 @@
                         font-weight: 700;
                     }
                     .age-container {
-                        display: grid !important;
                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-                        grid-template-rows: auto;
                         max-width: 85%;
-                    }
-                    .age-container div {
-                        background-color: #eeee;
-                        height: 80px;
-                        margin: 2px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: #006699;
-                        font-weight: 450;
-                        font-size: 1.3rem;
                     }
                     .age-container div:hover {
                         background-color: rgba(202, 202, 202, 0.933);
                     }
-                    .huge-btn-div {
-                        background-color: #7AC143;
-                        color: white;
-                        text-transform: uppercase;
-                        height: 65px;
-                        display: block;
-                        margin: auto;
-                        width: 70%;
-                        border-radius: 5px;
-                        border: none;
-                        font-weight: 700;
-                        padding-top: 10px;
-                        padding-left: 10px;
-                        text-align: center;
-                        display: grid;
-                        grid-template-columns: 90% 10%;
-                        grid-template-rows: auto;
-                        display: flex;
-                        align-items: center;
-                    }
-                    .huge-btn {
-                        width: 80%;
-                        font-size: 1.4rem;
-                        line-height: 65px;
-                    }
-                    .huge-btn-div img {
-                        position: absolute;
-                        width: 4% !important;
-                        right: 160px;
-                    }
                     .footer {
-                        background-color: #006699;
-                        text-align: center;
-                        color: rgb(223, 223, 223);
                         font-size: 8px;
                     }
-                    .footer-main {
-                        line-height: 0.9;
-                    }
                     .footer-main a {
-                        color: white;
-                        font-weight: bold;
-                        padding: 0px 10px;
                         font-size: 12px;
                     }
                     .footer-main img {
@@ -355,59 +271,29 @@
                 /* LARGE DESKTOP VERSION*/
                 
                 @media only screen and (min-width: 992px) {
-                    #header {
-                        background: #006699;
-                        border-bottom: 5px solid #7AC143;
-                    }
                     p {
+                        font-family: 'Roboto', sans-serif;
                         font-size: 18px;
-                    }
-                    .header-content {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        width: 100% !important;
+                        line-height: 1.65em;
                     }
                     .brand {
                         width: 50%;
                     }
                     .brand img {
-                        width: 53%;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                    }
-                    .header-btn {
-                        background-color: #7AC143;
-                        font-size: 14px;
-                        color: white;
-                        font-weight: 700;
-                        padding: 2px 10px;
-                    }
-                    .fa-chevron-right {
-                        color: #006699;
-                    }
-                    .above-title p {
-                        font-size: 14px;
-                        color: #999;
-                        font-weight: 400;
-                    }
-                    .blue-url {
-                        color: #006699;
-                        font-weight: 700;
+                        width: 45%;
                     }
                     .main-title {
-                        font-size: 2.5rem;
-                        text-align: center;
-                        font-weight: 700;
-                        width: 90%;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 2.7rem;
+                        line-height: 1.1;
+                        width: 98%;
                         display: block;
                         margin: auto;
                         margin-bottom: 20px;
                     }
                     .main-content {
                         max-width: 1170px;
-                    }
-                    .main-content img {
-                        width: 100%;
                     }
                     .text-container {
                         max-width: 940px;
@@ -416,103 +302,53 @@
                         width: 100%;
                     }
                     .comp-img {
-                        max-width: 80%;
+                        max-width: 75%;
                         margin: 0 auto;
                         display: block;
                     }
                     .red-text {
                         color: #C0392B;
-                        font-size: 18.6px;
+                        font-size: 17.6px;
                         font-family: 'Roboto' sans-serif;
                         line-height: 1.6em;
                     }
                     .logos {
-                        width: 70%;
+                        width: 45%;
                         display: block;
                         margin: auto;
                     }
-                    .quote {
-                        background-color: #eeee;
-                        border-left: #006699 4px solid;
-                        padding: 0px 15px;
-                    }
                     .quote p {
-                        padding: 10px;
-                        font-size: 16px;
+                        font-size: 18px;
                     }
                     .secondary-title {
                         font-size: 1.5rem;
-                        font-weight: bold;
                     }
-                    .steps {
-                        font-weight: bold;
+                    .action-btn {
+                        font-size: 1.5rem;
+                    }
+                    .btn-text {
+                        padding-right: 23px!important;
+                    }
+                    .btn-arrow {
+                        top: 19px;
                     }
                     .age-title {
                         color: #006699;
                         text-align: center;
-                        font-size: 1.3rem;
+                        font-size: 1.6rem;
                         font-weight: 700;
                     }
                     .age-container {
-                        display: grid !important;
                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-                        grid-template-rows: auto;
-                        max-width: 85%;
-                    }
-                    .age-container div {
-                        background-color: #eeee;
-                        height: 80px;
-                        margin: 2px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: #006699;
-                        font-weight: 450;
-                        font-size: 1.3rem;
+                        max-width: 80%;
                     }
                     .age-container div:hover {
                         background-color: rgba(202, 202, 202, 0.933);
                     }
-                    .huge-btn-div {
-                        background-color: #7AC143;
-                        color: white;
-                        text-transform: uppercase;
-                        display: block;
-                        margin: auto;
-                        width: 50%;
-                        border-radius: 5px;
-                        border: none;
-                        font-weight: 700;
-                        text-align: center;
-                        display: flex;
-                        align-items: center;
-                        position: relative;
-                    }
-                    .huge-btn {
-                        width: 90%;
-                        font-size: 1.4rem;
-                        line-height: 65px;
-                        height: 65px;
-                    }
-                    .huge-btn-div img {
-                        position: absolute;
-                        width: 5% !important;
-                        right: 25px;
-                        top: 20px;
-                    }
                     .footer {
-                        background-color: #006699;
-                        text-align: center;
-                        color: rgb(223, 223, 223);
                         font-size: 8px;
                     }
-                    .footer-main {
-                        line-height: 0.9;
-                    }
                     .footer-main a {
-                        color: white;
-                        font-weight: bold;
-                        padding: 0px 10px;
                         font-size: 12px;
                     }
                     .footer-main img {
